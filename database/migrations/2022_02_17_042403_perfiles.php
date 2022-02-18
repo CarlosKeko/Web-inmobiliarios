@@ -25,9 +25,9 @@ return new class extends Migration
             $table->string("telefonoFijo")->nullable();
             $table->string("paginaWeb")->nullable();
             $table->string("listaInmuebles")->nullable();
-            $table->string("idIdiomas");
-            $table->string("idServicios");
-            $table->string("idEspecialidades");
+            // $table->string("idIdiomas");
+            // $table->string("idServicios");
+            // $table->string("idEspecialidades");
             $table->string("fotografia");
             $table->string("video");
             $table->string("facebook")->nullable();

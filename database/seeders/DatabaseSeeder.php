@@ -15,10 +15,10 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        $this->call(PerfilSeeder::class);
         $this->call(IdiomaSeeder::class);
         $this->call(PerfilSeeder::class);
         $this->call(ServicioSeeder::class);
+        $this->call(EspecialidadSeeder::class);
 
     }
 }

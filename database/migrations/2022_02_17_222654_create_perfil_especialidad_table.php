@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("servicios", function(Blueprint $table) {
+        Schema::create('perfil_especialidad', function (Blueprint $table) {
             $table->id();
-            $table->string("nombre");
+            $table->unsignedBigInteger("perfil_id");
+            $table->unsignedBigInteger("especialidad_id");
+            $table->foreign("perfil_id")->references("id")->on("perfiles")->onDelete("cascade");
+            $table->foreign("especialidad_id")->references("id")->on("especialidades")->onDelete("cascade");
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists("servicios");
+        Schema::dropIfExists('perfil_especialidad');
     }
 };

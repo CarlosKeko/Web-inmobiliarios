@@ -27,9 +27,9 @@ class PerfilSeeder extends Seeder
         $perfil->telefonoFijo = "952684921";
         $perfil->paginaWeb = "www.prueba.com";
         $perfil->listaInmuebles = "wwww.prueba.com/inmuebles";
-        $perfil->idIdiomas = "1";
-        $perfil->idServicios = "2";
-        $perfil->idEspecialidades = "1";
+        // $perfil->idIdiomas = "1";
+        // $perfil->idServicios = "2";
+        // $perfil->idEspecialidades = "1";
         $perfil->fotografia = "prueba.png";
         $perfil->video = "historia.com";
         $perfil->facebook = "pruebaface";
