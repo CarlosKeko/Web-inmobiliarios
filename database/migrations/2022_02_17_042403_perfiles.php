@@ -25,9 +25,6 @@ return new class extends Migration
             $table->string("telefonoFijo")->nullable();
             $table->string("paginaWeb")->nullable();
             $table->string("listaInmuebles")->nullable();
-            // $table->string("idIdiomas");
-            // $table->string("idServicios");
-            // $table->string("idEspecialidades");
             $table->string("fotografia");
             $table->string("video");
             $table->string("facebook")->nullable();
@@ -35,7 +32,6 @@ return new class extends Migration
             $table->string("youtube")->nullable();
             $table->string("linkedin")->nullable();
             $table->string("twitter")->nullable();
-            $table->string("horario");
             $table->text("descripcion");
             $table->text("serviciosDescripcion");
             $table->timestamps();

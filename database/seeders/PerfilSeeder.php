@@ -37,7 +37,7 @@ class PerfilSeeder extends Seeder
         $perfil->youtube = "pruebayoutube";
         $perfil->linkedin = "pruebalinkedin";
         $perfil->twitter = "pruebatwitter";
-        $perfil->horario = "lunes";
+        // $perfil->horario = "lunes";
         $perfil->descripcion = "prueba descripcion";
         $perfil->serviciosDescripcion= "prueba descripciones";
 
