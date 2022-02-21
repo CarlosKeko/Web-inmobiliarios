@@ -22,17 +22,21 @@ class HomeController extends Controller
     }
 
     public function previa(Request $formulario) {
+
+        $formulario->validate([
+            'correo' => 'required|email|unique:perfiles',
+
+        ]);
+
         $servicio = new Servicio();
         $horario = new Horario();
         $especialidad = new Especialidad();
         $perfil = new Perfil();
 
-        // $peli = Perfil::where("correo", "=", "prueba@gmail.com")->get();
-        // return count($peli);
         if(count(Perfil::where("correo", "=", strtolower($formulario->email))->get()) < 1) {
             $perfil->nombreAgente = $formulario->nombreagente;
             $perfil->nombreEmpresa = $formulario->nombreempresa;
-            $perfil->correo = $formulario->email;
+            $perfil->correo = $formulario->correo;
             $perfil->ciudad = $formulario->ciudad;
             $perfil->provincia = $formulario->provincia;
             $perfil->direccion = $formulario->direccion;
@@ -51,8 +55,6 @@ class HomeController extends Controller
             $perfil->serviciosDescripcion = $formulario->serviciostexto;
             
             if ($perfil->save()) {
-                //$perfil->id
-                // return $formulario->all();
                 foreach($formulario->idiomas as $idioma) {
                     $idiomaBuscado = Idioma::where("nombre", "=", strtolower($idioma))->get();
                     if (count($idiomaBuscado) >= 1) {
@@ -77,7 +79,7 @@ class HomeController extends Controller
                     }
                 }
 
-                return $formulario;
+                return $perfil;
 
             }else {
                 return "fallo";
