@@ -25,15 +25,15 @@ class ServicioSeeder extends Seeder
         $servicio8 = new Servicio();
         $servicio9 = new Servicio();
 
-        $servicio->nombre = "Administración de Fincas";
-        $servicio2->nombre = "Agente Inmobiliario";
-        $servicio3->nombre = "Analista inversor";
-        $servicio4->nombre = "API";
-        $servicio5->nombre = "Consultoría inmobiliaria";
-        $servicio6->nombre = "Estudio técnico y de diseño";
-        $servicio7->nombre = "Gestor de propiedades";
-        $servicio8->nombre = "Promoción Inmobiliaria";
-        $servicio9->nombre = "Tasaciones";
+        $servicio->nombre = "administración de fincas";
+        $servicio2->nombre = "agente inmobiliario";
+        $servicio3->nombre = "analista inversor";
+        $servicio4->nombre = "api";
+        $servicio5->nombre = "consultoría inmobiliaria";
+        $servicio6->nombre = "estudio técnico y de diseño";
+        $servicio7->nombre = "gestor de propiedades";
+        $servicio8->nombre = "promoción inmobiliaria";
+        $servicio9->nombre = "tasaciones";
 
         $servicio->save();
         $servicio2->save();

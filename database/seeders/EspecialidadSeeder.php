@@ -17,7 +17,6 @@ class EspecialidadSeeder extends Seeder
     {
         $especialidad = new Especialidad();
         $especialidad2 = new Especialidad();
-        $especialidad3 = new Especialidad();
         $especialidad4 = new Especialidad();
         $especialidad5 = new Especialidad();
         $especialidad6 = new Especialidad();
@@ -26,20 +25,18 @@ class EspecialidadSeeder extends Seeder
         $especialidad9 = new Especialidad();
         $especialidad10 = new Especialidad();
 
-        $especialidad->nombre = "Vivienda";
-        $especialidad2->nombre = "Obra";
-        $especialidad3->nombre = "Nueva";
-        $especialidad4->nombre = "Local";
-        $especialidad5->nombre = "Nave";
-        $especialidad6->nombre = "Garaje";
-        $especialidad7->nombre = "Oficina";
-        $especialidad8->nombre = "Trastero";
-        $especialidad9->nombre = "Terreno";
-        $especialidad10->nombre = "Edificio";
+        $especialidad->nombre = "vivienda";
+        $especialidad2->nombre = "obra nueva";
+        $especialidad4->nombre = "local";
+        $especialidad5->nombre = "nave";
+        $especialidad6->nombre = "garaje";
+        $especialidad7->nombre = "oficina";
+        $especialidad8->nombre = "trastero";
+        $especialidad9->nombre = "terreno";
+        $especialidad10->nombre = "edificio";
 
         $especialidad->save();
         $especialidad2->save();
-        $especialidad3->save();
         $especialidad4->save();
         $especialidad5->save();
         $especialidad6->save();

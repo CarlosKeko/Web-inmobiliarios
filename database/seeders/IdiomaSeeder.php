@@ -28,18 +28,18 @@ class IdiomaSeeder extends Seeder
         $idioma11 = new Idioma();
         $idioma12 = new Idioma();
 
-        $idioma->nombre = "Español";
-        $idioma2->nombre = "Inglés";
-        $idioma3->nombre = "Francés";
-        $idioma4->nombre = "Alemán";
-        $idioma5->nombre = "Chino";
-        $idioma6->nombre = "Árabe";
-        $idioma7->nombre = "Ruso";
-        $idioma8->nombre = "Portugués";
-        $idioma9->nombre = "Italiano";
-        $idioma10->nombre = "Euskera";
-        $idioma11->nombre = "Catalán";
-        $idioma12->nombre = "Gallego";
+        $idioma->nombre = "español";
+        $idioma2->nombre = "inglés";
+        $idioma3->nombre = "francés";
+        $idioma4->nombre = "alemán";
+        $idioma5->nombre = "chino";
+        $idioma6->nombre = "arabe";
+        $idioma7->nombre = "ruso";
+        $idioma8->nombre = "portugués";
+        $idioma9->nombre = "italiano";
+        $idioma10->nombre = "euskera";
+        $idioma11->nombre = "catalán";
+        $idioma12->nombre = "gallego";
 
         $idioma->save();
         $idioma2->save();
